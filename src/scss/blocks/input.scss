@@ -1,0 +1,13 @@
+.input-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 1rem;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+.option-input{
+    display: none;
+}

@@ -1,0 +1,18 @@
+@use '../mixins/hover.scss' as*;
+
+
+.button{
+    height: 60px;
+    width: 100%;
+    color: inherit;
+    background-color: var(--cta-color);
+    box-shadow: 0 4px 4px var(--primay-shadow);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    @include hover{
+        background-color: var(--cta-color-hover);
+       transition: transform 0.2s, background-color 0.2s;
+    }
+  }

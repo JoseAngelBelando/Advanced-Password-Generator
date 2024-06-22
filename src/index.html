@@ -2,13 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon/png-clipart-password-manager-password-safe-android-blue-electric-blue-thumbnail.png" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    
+    <title>Generador contraseña avanzado</title>
   </head>
   <body>
+    <h1>Generador de Contraseña Avanzado</h1>
+    <div class="password-generator">
+      
+        
+      <input type="text" id="password" class="password" readonly>
+      <br>
+      <div>
+        <label class="generator" for="password">length:
+          <span id="length-text"></span>
+          <span id="lengthValue">8</span>
+        </label>
+      </div>
+      <label for="range" class="range-label"></label>
+      <div class="range-container">
+        <span>4</span>
+        <input class="range-input" type="range" id="length" min="4" max="32" step="1" value="16">
+        <span>32</span>
+      </div>  
+      <br>
+      <div id="options" class="options-container">
+        <div class="input-field">
+          <span class="option-text">Include Uppercase</span>
+          <input type="checkbox" id="uppercase" class="option-input">
+          <label for="uppercase" class="option-label"></label>
+        </div>
+        <div class="input-field">
+          <span class="option-text">Include lowercase</span>
+          <input type="checkbox" id="lowercase" class="option-input">
+          <label for="lowercase" class="option-label"></label>
+        </div>
+        <div class="input-field">
+          <span class="toogle">Include Numbers</span>
+          <input type="checkbox" id="numbers" class="option-input">
+          <label for="numbers" class="option-label"></label>
+        </div>
+        <div class="input-field">
+          <span class="toogle">Include Symbols</span>
+          <input type="checkbox" id="symbols" class="option-input">
+          <label for="symbols" class="option-label"></label>
+        </div>
+      </div>
+      <br>
+      <button class="button" id="generate" disabled>Generar Contraseña</button>
+      <p id="strength"></p>
+    </div> 
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

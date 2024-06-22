@@ -1,0 +1,26 @@
+.option-label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-inline: 2px;
+    width: 75px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: var(--label-color);
+}
+.option-label::after{
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    transition: translate 0.3s;
+}
+.option-input:checked + .option-label{
+    background-color: var(--cta-color-hover);
+}
+.option-input:checked + .option-label::after{
+    translate: 30px;
+}

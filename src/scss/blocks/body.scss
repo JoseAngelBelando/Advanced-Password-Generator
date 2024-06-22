@@ -2,6 +2,57 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0;
+  min-height: 100vh;
+}
+.password-generator{
+  padding: 2.25rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  display: block;
+}
+.generator{
+  display: block;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+}
+.password{
+  height: 60px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color:inherit ;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 4px var(--primay-shadow);
+  text-align: center;
+}
+.range-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  padding: 1.25rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 4px var(--primay-shadow);
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.range-input{
+  height: 3px;
+  width: 80%;
+  color: var(--accent-color);
 }
