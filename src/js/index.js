@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const numberChars = '0123456789';
   const symbolChars = '!@#$%^&*()_+-={}[]:;<>,.?/';
 
-  function updateLengthValue() {
+  const updateLengthValue = () => {
     const length = lengthInput.value;
     lengthValue.textContent = length;
     checkButtonStatus();
     updateStrength();
     generatePassword();
-  }
+  };
 
-  function checkButtonStatus() {
+  const checkButtonStatus = () => {
     generateButton.disabled = lengthInput.value < 6;
-  }
+  };
 
-  function updateStrength() {
+  const updateStrength = () => {
     const length = parseInt(lengthInput.value, 10);
     if (length <= 5) {
       strengthDisplay.textContent = 'TOO SHORT';
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       strengthDisplay.textContent = 'STRONG';
     }
-  }
+  };
 
-  function generatePassword() {
+  const generatePassword = () => {
     const length = parseInt(lengthInput.value, 10);
     let characters = '';
     if (uppercaseCheckbox.checked) characters += uppercaseChars;
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       password += characters[randomIndex];
     }
     passwordInput.value = password;
-  }
+  };
 
   lengthInput.addEventListener('input', updateLengthValue);
   generateButton.addEventListener('click', generatePassword);
