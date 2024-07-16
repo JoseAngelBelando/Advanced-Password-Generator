@@ -7,6 +7,11 @@ const lowercaseCheckbox = document.getElementById('lowercase');
 const numbersCheckbox = document.getElementById('numbers');
 const symbolsCheckbox = document.getElementById('symbols');
 
+const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+const numberChars = '0123456789';
+const symbolChars = '!@#$%^&*()_+-={}[]:;<>,.?/';
+
 export {
   lengthInput,
   passwordInput,
@@ -14,5 +19,9 @@ export {
   uppercaseCheckbox,
   lowercaseCheckbox,
   numbersCheckbox,
-  symbolsCheckbox
+  symbolsCheckbox,
+  uppercaseChars,
+  lowercaseChars,
+  numberChars,
+  symbolChars
 };

@@ -1,7 +1,6 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
 
-import { updateLengthValue, generatePassword } from './passwordGenerator.js';
 import {
   lengthInput,
   generateButton,
@@ -9,7 +8,13 @@ import {
   lowercaseCheckbox,
   numbersCheckbox,
   symbolsCheckbox
+  // uppercaseChars,
+  // lowercaseChars,
+  // numberChars,
+  // symbolChars
 } from './domUpdates.js';
+
+import { updateLengthValue, generatePassword } from './passwordGenerator.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   lengthInput.addEventListener('input', updateLengthValue);

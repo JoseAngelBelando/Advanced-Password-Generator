@@ -1,12 +1,16 @@
 import {
   lengthInput,
   passwordInput,
+  generateButton,
   uppercaseCheckbox,
   lowercaseCheckbox,
   numbersCheckbox,
-  symbolsCheckbox
+  symbolsCheckbox,
+  uppercaseChars,
+  lowercaseChars,
+  numberChars,
+  symbolChars
 } from './domUpdates.js';
-import { uppercaseChars, lowercaseChars, numberChars, symbolChars } from './constants.js';
 
 const updateLengthValue = () => {
   const length = lengthInput.value;
